@@ -1,0 +1,110 @@
+[
+  {
+    "doc_id": "KB-001",
+    "title": "Shipping Policy",
+    "category": "policies",
+    "content": "Shipping Policy - Last Updated: January 2024\n\nStandard Shipping (5-7 business days):\n- Free for orders over $50\n- $5.99 for orders under $50\n- Available for all 50 US states\n\nExpress Shipping (2-3 business days):\n- $12.99 flat rate\n- Free for orders over $150\n- Not available for PO boxes\n\nOvernight Shipping (1 business day):\n- $24.99 flat rate\n- Must order before 2 PM EST\n- Available Monday-Friday only\n\nInternational Shipping:\n- Canada: $15-25 depending on weight (7-14 days)\n- Europe: $20-35 depending on weight (10-18 days)\n- Australia/Asia: $25-45 depending on weight (14-21 days)\n- Customer responsible for customs duties and taxes\n\nOrder Tracking:\nAll orders include tracking numbers sent via email within 24 hours of shipment.\nYou can track your order at www.example.com/track",
+    "keywords": [
+      "shipping",
+      "delivery",
+      "tracking",
+      "international"
+    ],
+    "last_updated": "2024-01-15T00:00:00Z"
+  },
+  {
+    "doc_id": "KB-002",
+    "title": "Return and Refund Policy",
+    "category": "policies",
+    "content": "Return and Refund Policy\n\nReturn Window:\n- 30 days from delivery date for full refund\n- 31-60 days: Store credit only\n- After 60 days: No returns accepted\n\nConditions for Return:\n- Item must be unused and in original packaging\n- All tags and labels must be attached\n- Proof of purchase required (order number or receipt)\n\nRefund Process:\n1. Initiate return at www.example.com/returns\n2. Print prepaid return label (free for defective items)\n3. Drop off at any authorized location\n4. Refund processed within 5-7 business days of receipt\n\nRefund Methods:\n- Original payment method: 5-7 business days\n- Store credit: Immediate upon return receipt\n\nNon-Returnable Items:\n- Digital products and software licenses\n- Gift cards\n- Personalized/custom items\n- Items marked as \"Final Sale\"\n\nDamaged or Defective Items:\nContact support within 48 hours of delivery for immediate replacement or refund.",
+    "keywords": [
+      "return",
+      "refund",
+      "exchange",
+      "policy"
+    ],
+    "last_updated": "2024-02-01T00:00:00Z"
+  },
+  {
+    "doc_id": "KB-003",
+    "title": "Subscription Plans and Pricing",
+    "category": "billing",
+    "content": "Subscription Plans - Updated March 2024\n\nBasic Plan - $9.99/month:\n- Access to core features\n- Email support (24-48 hour response)\n- 5GB cloud storage\n- Single user license\n\nPro Plan - $29.99/month (Most Popular):\n- All Basic features\n- Priority support (4-8 hour response)\n- 50GB cloud storage\n- Up to 5 team members\n- Advanced analytics dashboard\n- API access\n\nEnterprise Plan - $99.99/month:\n- All Pro features\n- Dedicated account manager\n- 24/7 phone support\n- Unlimited cloud storage\n- Unlimited team members\n- Custom integrations\n- SLA guarantee\n\nAnnual Billing:\nSave 20% with annual billing:\n- Basic: $95.90/year (save $24)\n- Pro: $287.90/year (save $72)\n- Enterprise: $959.90/year (save $240)\n\nPayment Methods:\n- Credit/Debit cards (Visa, Mastercard, Amex)\n- PayPal\n- Bank transfer (Enterprise only)\n\nCancellation:\nCancel anytime from your account settings. Access continues until end of billing period. No partial refunds for annual plans after 30 days.",
+    "keywords": [
+      "subscription",
+      "pricing",
+      "plan",
+      "billing",
+      "payment"
+    ],
+    "last_updated": "2024-03-01T00:00:00Z"
+  },
+  {
+    "doc_id": "KB-004",
+    "title": "Account Security and Two-Factor Authentication",
+    "category": "technical",
+    "content": "Account Security Guide\n\nTwo-Factor Authentication (2FA):\nEnable 2FA for enhanced security:\n1. Go to Account Settings > Security\n2. Click \"Enable 2FA\"\n3. Scan QR code with authenticator app (Google Authenticator, Authy)\n4. Enter verification code to confirm\n\nBackup Codes:\n- Download 10 backup codes when enabling 2FA\n- Store in secure location\n- Each code can be used once\n- Generate new codes if lost\n\nPassword Requirements:\n- Minimum 8 characters\n- At least one uppercase letter\n- At least one lowercase letter\n- At least one number\n- At least one special character\n\nPassword Reset:\n- Click \"Forgot Password\" on login page\n- Check email for reset link (valid for 24 hours)\n- Contact support if no email received within 5 minutes\n\nSuspicious Activity:\nIf you notice unauthorized access:\n1. Change password immediately\n2. Review login history in Account Settings\n3. Enable 2FA if not already active\n4. Contact support to report incident\n\nLogin Issues:\n- Clear browser cache and cookies\n- Try incognito/private browsing mode\n- Disable browser extensions temporarily\n- Ensure system time is correct (affects 2FA codes)",
+    "keywords": [
+      "security",
+      "2fa",
+      "password",
+      "authentication",
+      "login"
+    ],
+    "last_updated": "2024-02-20T00:00:00Z"
+  },
+  {
+    "doc_id": "KB-005",
+    "title": "API Documentation - Getting Started",
+    "category": "technical",
+    "content": "API Documentation v2.0\n\nBase URL: https://api.example.com/v2\n\nAuthentication:\nAll API requests require an API key in the header:\nAuthorization: Bearer YOUR_API_KEY\n\nRate Limits:\n- Basic plan: 100 requests/hour\n- Pro plan: 1000 requests/hour\n- Enterprise: 10000 requests/hour\n\nCommon Endpoints:\n\nGET /users/{id}\nRetrieve user information by ID.\nResponse: { \"id\": \"123\", \"name\": \"John Doe\", \"email\": \"john@example.com\" }\n\nPOST /tickets\nCreate a new support ticket.\nBody: { \"subject\": \"Issue\", \"description\": \"Details\", \"priority\": \"high\" }\n\nGET /orders/{id}\nRetrieve order details.\nResponse includes: items, status, tracking_number, shipping_address\n\nError Codes:\n200 - Success\n400 - Bad Request (invalid parameters)\n401 - Unauthorized (invalid API key)\n429 - Rate Limit Exceeded\n500 - Internal Server Error\n\nSDKs Available:\n- Python: pip install example-api\n- Node.js: npm install @example/api\n- PHP: composer require example/api\n\nWebhook Integration:\nConfigure webhooks to receive real-time updates:\n1. Go to Developer Settings\n2. Add webhook URL\n3. Select events to subscribe to\n4. Verify webhook signature for security",
+    "keywords": [
+      "api",
+      "developer",
+      "integration",
+      "webhook"
+    ],
+    "last_updated": "2024-03-10T00:00:00Z"
+  },
+  {
+    "doc_id": "KB-006",
+    "title": "Troubleshooting Common Issues",
+    "category": "technical",
+    "content": "Troubleshooting Guide\n\nError Code 502 - Bad Gateway:\nCause: Server connectivity issue\nSolution:\n1. Wait 2-3 minutes and retry\n2. Clear browser cache\n3. Try different browser\n4. Check status page: status.example.com\n\nSlow Performance:\nPossible causes and solutions:\n1. Large file uploads - Use chunked upload API\n2. Browser extensions - Disable ad blockers temporarily\n3. Network issues - Test connection speed\n4. Outdated app - Update to latest version\n\nEmail Not Received:\n1. Check spam/junk folder\n2. Add noreply@example.com to contacts\n3. Verify email address is correct\n4. Wait 10 minutes for delivery\n5. Contact support if still missing\n\nMobile App Crashes:\n1. Force close and reopen app\n2. Update to latest version from app store\n3. Clear app cache (Android) or reinstall (iOS)\n4. Ensure device meets minimum requirements\n\nFile Upload Failures:\n- Maximum file size: 100MB\n- Supported formats: PDF, DOC, DOCX, JPG, PNG\n- Check internet connection stability\n- Try uploading in smaller batches\n\nCalendar Sync Issues:\n1. Disconnect and reconnect integration\n2. Check calendar permissions\n3. Ensure timezone settings match\n4. Sync may take up to 15 minutes",
+    "keywords": [
+      "troubleshooting",
+      "error",
+      "bug",
+      "fix",
+      "issue"
+    ],
+    "last_updated": "2024-03-15T00:00:00Z"
+  },
+  {
+    "doc_id": "KB-007",
+    "title": "Student Discount Program",
+    "category": "billing",
+    "content": "Student Discount Program\n\nEligibility:\n- Currently enrolled students at accredited institutions\n- Valid student email (.edu) or ID required\n- Discount valid for 12 months, renewable with verification\n\nDiscount Details:\n- 50% off all subscription plans\n- Applies to monthly and annual billing\n- Cannot be combined with other offers\n\nHow to Apply:\n1. Create account with student email\n2. Go to Billing > Student Verification\n3. Upload student ID or enrollment certificate\n4. Verification completed within 24 hours\n5. Discount automatically applied\n\nSupported Verification Methods:\n- Student email verification (instant)\n- SheerID integration\n- Manual document upload\n\nRenewal:\n- Re-verify annually to maintain discount\n- Notification sent 30 days before expiration\n- Grace period of 14 days after expiration\n\nNot Eligible:\n- Alumni (graduated more than 6 months ago)\n- Faculty and staff (separate education program available)\n- Non-accredited institutions",
+    "keywords": [
+      "student",
+      "discount",
+      "education",
+      "pricing"
+    ],
+    "last_updated": "2024-01-20T00:00:00Z"
+  },
+  {
+    "doc_id": "KB-008",
+    "title": "Contact Information and Support Hours",
+    "category": "general",
+    "content": "Contact Support\n\nSupport Hours:\n- Email Support: 24/7\n- Live Chat: Monday-Friday 9 AM - 6 PM EST\n- Phone Support: Monday-Friday 8 AM - 8 PM EST\n\nContact Methods:\n\nEmail:\nsupport@example.com\nResponse time: 4-24 hours depending on plan\n\nLive Chat:\nAvailable on website and mobile app\nClick chat icon in bottom right corner\n\nPhone:\nUS/Canada: 1-800-123-4567\nInternational: +1-555-123-4567\n\nMailing Address:\nExample Inc.\n123 Support Street\nTech City, TC 12345\nUSA\n\nSocial Media:\nTwitter: @examplesupport\nFacebook: facebook.com/examplesupport\nLinkedIn: linkedin.com/company/example\n\nEmergency Support (Enterprise):\n24/7 hotline: 1-800-EMERGENCY\nFor critical system outages only\n\nBefore Contacting:\n1. Check Knowledge Base for quick answers\n2. Search community forums\n3. Have your account information ready\n4. Include screenshots if applicable",
+    "keywords": [
+      "contact",
+      "support",
+      "phone",
+      "email",
+      "hours"
+    ],
+    "last_updated": "2024-02-28T00:00:00Z"
+  }
+]
